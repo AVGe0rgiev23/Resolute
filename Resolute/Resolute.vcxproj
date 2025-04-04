@@ -149,10 +149,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Resolute\source\gameMenu.cpp" />
     <ClCompile Include="Resolute\source\login.cpp" />
+    <ClCompile Include="Resolute\source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Resolute\header\gameMenu.h" />
     <ClInclude Include="Resolute\header\login.h" />
+    <ClInclude Include="Resolute\header\main.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

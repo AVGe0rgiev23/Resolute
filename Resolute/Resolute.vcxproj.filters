@@ -18,9 +18,21 @@
     <ClCompile Include="Resolute\source\login.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Resolute\source\gameMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resolute\source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Resolute\header\login.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resolute\header\gameMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resolute\header\main.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

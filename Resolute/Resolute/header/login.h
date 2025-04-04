@@ -4,27 +4,24 @@
 
 using namespace std;
 
-// Screen settings
 extern const int screenWidth;
 extern const int screenHeight;
 
 // Function prototypes
-void InitGame();
-void HandleInput();
-void SaveCredentials(const string& user, const string& pass);
-bool ValidateLogin(const string& user, const string& pass);
-bool CheckIfRegistered();
+void menu();
+void InitLoginScreen();
+void HandleLoginInput();
 void DrawLoginScreen();
-void DrawMainMenu();
+bool ValidateLogin(const string& user, const string& pass);
+void SaveCredentials(const string& user, const string& pass);
+bool CheckIfRegistered();
+void RedirectToGameMenu();
 
-// Global variables
+// Global variables for login state
+extern bool loginSuccess;
 extern string username;
 extern string password;
-extern bool loginSuccess;
 extern bool onUsername;
 extern bool onPassword;
 extern bool isRegistered;
-extern bool registrationInProgress;
 extern bool loginButtonActive;
-
-

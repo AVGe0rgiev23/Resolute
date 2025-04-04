@@ -1,2 +1,5 @@
-﻿  login.cpp
+﻿  gameMenu.cpp
+  login.cpp
+  main.cpp
+  Generating Code...
   Resolute.vcxproj -> C:\Resolute\bin\Debug-windows-x86_64\Resolute\Resolute.exe

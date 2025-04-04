@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Resolute\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|C:\\Resolute\\Resolute\\Resolute\\header\\login.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|solutionrelative:Resolute\\Resolute\\header\\login.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|C:\\Resolute\\Resolute\\Resolute\\source\\login.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|solutionrelative:Resolute\\Resolute\\source\\login.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|C:\\Resolute\\Resolute\\Resolute\\header\\login.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|solutionrelative:Resolute\\Resolute\\header\\login.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|C:\\Resolute\\Resolute\\Resolute\\source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|solutionrelative:Resolute\\Resolute\\source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|C:\\Resolute\\Resolute\\Resolute\\source\\gameMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|solutionrelative:Resolute\\Resolute\\source\\gameMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|C:\\Resolute\\Resolute\\Resolute\\header\\gameMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|solutionrelative:Resolute\\Resolute\\header\\gameMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|C:\\Resolute\\Resolute\\users.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|solutionrelative:Resolute\\users.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|C:\\Resolute\\Resolute\\Resolute\\header\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F8F3E1CF-FC21-4C7B-BAFB-242AE9010E21}|Resolute\\Resolute.vcxproj|solutionrelative:Resolute\\Resolute\\header\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +38,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "main.h",
+              "DocumentMoniker": "C:\\Resolute\\Resolute\\Resolute\\header\\main.h",
+              "RelativeDocumentMoniker": "Resolute\\Resolute\\header\\main.h",
+              "ToolTip": "C:\\Resolute\\Resolute\\Resolute\\header\\main.h",
+              "RelativeToolTip": "Resolute\\Resolute\\header\\main.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-04T00:35:24.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Resolute\\Resolute\\Resolute\\source\\main.cpp",
+              "RelativeDocumentMoniker": "Resolute\\Resolute\\source\\main.cpp",
+              "ToolTip": "C:\\Resolute\\Resolute\\Resolute\\source\\main.cpp*",
+              "RelativeToolTip": "Resolute\\Resolute\\source\\main.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-04T00:34:18.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "gameMenu.h",
+              "DocumentMoniker": "C:\\Resolute\\Resolute\\Resolute\\header\\gameMenu.h",
+              "RelativeDocumentMoniker": "Resolute\\Resolute\\header\\gameMenu.h",
+              "ToolTip": "C:\\Resolute\\Resolute\\Resolute\\header\\gameMenu.h",
+              "RelativeToolTip": "Resolute\\Resolute\\header\\gameMenu.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-04T00:29:57.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "gameMenu.cpp",
+              "DocumentMoniker": "C:\\Resolute\\Resolute\\Resolute\\source\\gameMenu.cpp",
+              "RelativeDocumentMoniker": "Resolute\\Resolute\\source\\gameMenu.cpp",
+              "ToolTip": "C:\\Resolute\\Resolute\\Resolute\\source\\gameMenu.cpp*",
+              "RelativeToolTip": "Resolute\\Resolute\\source\\gameMenu.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-04T00:28:50.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "users.txt",
+              "DocumentMoniker": "C:\\Resolute\\Resolute\\users.txt",
+              "RelativeDocumentMoniker": "Resolute\\users.txt",
+              "ToolTip": "C:\\Resolute\\Resolute\\users.txt",
+              "RelativeToolTip": "Resolute\\users.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-04T00:28:35.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "login.h",
               "DocumentMoniker": "C:\\Resolute\\Resolute\\Resolute\\header\\login.h",
               "RelativeDocumentMoniker": "Resolute\\Resolute\\header\\login.h",
               "ToolTip": "C:\\Resolute\\Resolute\\Resolute\\header\\login.h*",
               "RelativeToolTip": "Resolute\\Resolute\\header\\login.h*",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwBEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-27T18:09:47.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "login.cpp",
               "DocumentMoniker": "C:\\Resolute\\Resolute\\Resolute\\source\\login.cpp",
               "RelativeDocumentMoniker": "Resolute\\Resolute\\source\\login.cpp",
               "ToolTip": "C:\\Resolute\\Resolute\\Resolute\\source\\login.cpp*",
               "RelativeToolTip": "Resolute\\Resolute\\source\\login.cpp*",
-              "ViewState": "AgIAAK0AAAAAAAAAAAAUwMcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwCcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-27T18:09:39.628Z",
               "EditorCaption": ""

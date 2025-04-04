@@ -1,31 +1,53 @@
+#include "raylib.h"
 #include "../header/login.h"
-#include <iostream>
 #include <fstream>
+#include <iostream>
 
 using namespace std;
 
-// Screen settings
-const int screenWidth = 800;
+// Global variables for login state
+const int screenWidth = 800;  // Define the screen size
 const int screenHeight = 600;
 
-// Global variables
+bool loginSuccess = false;
 string username = "";
 string password = "";
-bool loginSuccess = false;
 bool onUsername = true;
 bool onPassword = false;
-bool isRegistered = CheckIfRegistered();
-bool registrationInProgress = true;
-bool loginButtonActive = false;  // Flag to determine if the login button is active
+bool isRegistered = CheckIfRegistered();  // This checks if there is any user data
+bool loginButtonActive = false;
+bool isInLoginMode = true;  // Flag to switch between login and registration
 
-void InitGame() {
+
+int main() {
+    InitLoginScreen();  // Initialize the login screen
+
+    while (!WindowShouldClose()) {
+        HandleLoginInput();  // Handle user input (username/password)
+        BeginDrawing();
+        ClearBackground(DARKGRAY);
+
+        if (loginSuccess) {
+            RedirectToGameMenu();  // Redirect to the game menu after successful login
+        }
+        else {
+            DrawLoginScreen();  // Show login/registration screen
+        }
+
+        EndDrawing();
+    }
+
+    CloseWindow();  // Close the window and exit
+}
+
+void InitLoginScreen() {
     InitWindow(screenWidth, screenHeight, "Futuristic Login/Registration Menu");
     SetTargetFPS(60);
 }
 
 bool CheckIfRegistered() {
     ifstream file("users.txt");
-    return file.good(); // If file exists, assume user is registered
+    return file.good(); // If file exists and is not empty, we assume user is registered
 }
 
 void SaveCredentials(const string& user, const string& pass) {
@@ -45,9 +67,10 @@ bool ValidateLogin(const string& user, const string& pass) {
     return false;
 }
 
-void HandleInput() {
+// Handle user input for the login screen
+void HandleLoginInput() {
     // Handle input for username and password
-    if (IsKeyPressed(KEY_TAB)) {
+    if (IsKeyPressed(KEY_ENTER)) {
         // Switch between username and password field when tab is pressed
         onUsername = !onUsername;
         onPassword = !onPassword;
@@ -84,12 +107,19 @@ void HandleInput() {
         }
     }
 
-    // Check if the login button should be active (both fields must be non-empty)
+    // Check if the login/register button should be active (both fields must be non-empty)
     loginButtonActive = (!username.empty() && !password.empty());
 }
 
+// Draw the login screen
 void DrawLoginScreen() {
-    DrawText(isRegistered ? "LOGIN" : "REGISTER", screenWidth / 2 - 50, 50, 30, WHITE);
+    // Display different text based on login mode
+    if (isInLoginMode) {
+        DrawText("LOGIN", screenWidth / 2 - 50, 50, 30, WHITE);
+    }
+    else {
+        DrawText("REGISTER", screenWidth / 2 - 60, 50, 30, WHITE);
+    }
 
     // Draw input fields
     DrawRectangle(screenWidth / 2 - 100, 150, 200, 40, GRAY);
@@ -116,84 +146,27 @@ void DrawLoginScreen() {
     // Draw the button for login/register
     Color buttonColor = loginButtonActive ? BLUE : DARKGRAY;
     DrawRectangle(screenWidth / 2 - 50, 260, 100, 40, buttonColor);
-    DrawText(isRegistered ? "LOGIN" : "REGISTER", screenWidth / 2 - 40, 270, 20, WHITE);
+    DrawText(isInLoginMode ? "LOGIN" : "REGISTER", screenWidth / 2 - 40, 270, 20, WHITE);
 
     // Button click action
     if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON) && loginButtonActive) {
-        if (!isRegistered && !username.empty() && !password.empty()) {
+        if (!isInLoginMode && !username.empty() && !password.empty()) {
+            // Register the user if not in login mode and fields are filled
             SaveCredentials(username, password);
-            isRegistered = true;  // Mark as registered
-            registrationInProgress = false;  // Stay on the registration screen
+            isRegistered = true;  // Mark as registered after saving the credentials
+            isInLoginMode = true; // Switch back to login mode after registration
         }
-        else if (isRegistered && ValidateLogin(username, password)) {
+        else if (isInLoginMode && ValidateLogin(username, password)) {
+            // Validate login and set login success
             loginSuccess = true;  // Successful login, move to main menu
+            RedirectToGameMenu();  // Redirect to game menu after successful login
         }
     }
-}
 
-void DrawMainMenu() {
-    DrawText("MAIN MENU", screenWidth / 2 - 80, 50, 30, WHITE);
-
-    // Draw buttons for Start, Settings, How to Play, and Exit
-    DrawRectangle(screenWidth / 2 - 100, 150, 200, 50, BLUE);
-    DrawText("Start Game", screenWidth / 2 - 60, 165, 20, WHITE);
-
-    DrawRectangle(screenWidth / 2 - 100, 220, 200, 50, BLUE);
-    DrawText("Settings", screenWidth / 2 - 50, 235, 20, WHITE);
-
-    DrawRectangle(screenWidth / 2 - 100, 290, 200, 50, BLUE);
-    DrawText("How to Play", screenWidth / 2 - 50, 305, 20, WHITE);
-
-    DrawRectangle(screenWidth / 2 - 100, 360, 200, 50, RED);
-    DrawText("Exit", screenWidth / 2 - 20, 375, 20, WHITE);
-
-    // Handle button clicks
-    if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
-        int mouseY = GetMouseY();
-
-        // Check if Start Game button is clicked
-        if (mouseY > 150 && mouseY < 200) {
-            // Implement start game logic here
-            std::cout << "Start Game button clicked!" << std::endl;
-        }
-
-        // Check if Settings button is clicked
-        if (mouseY > 220 && mouseY < 270) {
-            // Implement settings logic here
-            std::cout << "Settings button clicked!" << std::endl;
-        }
-
-        // Check if How to Play button is clicked
-        if (mouseY > 290 && mouseY < 340) {
-            // Implement how to play logic here
-            std::cout << "How to Play button clicked!" << std::endl;
-        }
-
-        // Check if Exit button is clicked
-        if (mouseY > 360 && mouseY < 410) {
-            CloseWindow(); // Close the window and exit
-        }
+    // Switch between login and registration mode
+    if (IsKeyPressed(KEY_TAB)) {
+        isInLoginMode = !isInLoginMode;
+        username = "";  // Clear input fields when switching
+        password = "";
     }
-}
-
-int main() {
-    InitGame();  // Initialize the game
-    while (!WindowShouldClose()) {
-        HandleInput();  // Handle input (user interactions)
-
-        BeginDrawing();
-        ClearBackground(DARKGRAY);
-
-        if (!loginSuccess) {
-            DrawLoginScreen();  // Show login or registration screen
-        }
-        else {
-            DrawMainMenu();  // Show main menu after successful login
-        }
-
-        EndDrawing();
-    }
-
-    CloseWindow(); // Close the window and exit
-    return 0;
 }
