@@ -75,6 +75,9 @@
     <IntDir>..\bin-int\Debug-windows-x86_64\Resolute\</IntDir>
     <TargetName>Resolute</TargetName>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\bin\Debug-windows-x86_64\Resolute.exe</OutDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -152,11 +155,16 @@
     <ClCompile Include="Resolute\source\gameMenu.cpp" />
     <ClCompile Include="Resolute\source\login.cpp" />
     <ClCompile Include="Resolute\source\main.cpp" />
+    <ClCompile Include="Resolute\source\quizChoice.cpp" />
+    <ClCompile Include="Resolute\source\quizScreen.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Resolute\header\cppQuiz.h" />
     <ClInclude Include="Resolute\header\gameMenu.h" />
     <ClInclude Include="Resolute\header\login.h" />
     <ClInclude Include="Resolute\header\main.h" />
+    <ClInclude Include="Resolute\header\quizChoice.h" />
+    <ClInclude Include="Resolute\header\quizScreen.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

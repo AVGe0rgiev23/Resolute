@@ -25,7 +25,7 @@ int main() {
     while (!WindowShouldClose()) {
         HandleLoginInput();  // Handle user input (username/password)
         BeginDrawing();
-        ClearBackground(DARKGRAY);
+        ClearBackground(BLACK);
 
         if (loginSuccess) {
             RedirectToGameMenu();  // Redirect to the game menu after successful login
