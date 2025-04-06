@@ -10,7 +10,7 @@
 <div align="center">
 <p>🧸 All ages app</p>
 <p>📚 Innovative educational approach</p>
-<p>💡 Fun fact CompileX has had </p>
+<p>💡 Fun fact Resolute has had </p>
 <img align="center" src="https://api.visitorbadge.io/api/visitors?path=/codingburgas/10grade-christmas-luck-AlgoStax&label=Visitors&labelColor=9FCEE5&countColor=9FCEE5&labelStyle=upper">
 </br>
 </br>
