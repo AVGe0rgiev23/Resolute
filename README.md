@@ -21,7 +21,7 @@
 </div>
 
 # 💻 About
-## CompileX is an all-in-one eSchool app designed to make coding and learning easy for students, teachers, and admins. With features like in-app code execution, course management, and real-time feedback, CompileX helps students learn efficiently and collaborate seamlessly. Whether you're coding, assigning tasks, or tracking progress, CompileX simplifies the learning experience for all.
+## Resolute is an all-in-one eSchool app designed to make coding and learning easy for students, teachers, and admins. With features like in-app code execution, course management, and real-time feedback, Resolute helps students learn efficiently and collaborate seamlessly. Whether you're coding, assigning tasks, or tracking progress, Resolute simplifies the learning experience for all.
 
 </p>
 <p align="center">
