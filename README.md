@@ -1,7 +1,7 @@
 <h1 align="center">🧠Team Resolute</h1>
 <h2 align="center">🧬 An eschool application</h2>
 <p align="center" >
-<a"><img width="405" alt="Screenshot 2025-03-27 103824" src="https://github.com/user-attachments/assets/a516f133-74cc-412c-ae59-e5ac7e25c49f" />
+<a"><img width="405" alt="Screenshot 2025-03-27 103824" src="https://github.com/AVGe0rgiev23/Resolute/blob/main/icons/Resolute.png?raw=true" />
 </a>
 </p>
 
